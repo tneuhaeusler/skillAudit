@@ -39,8 +39,8 @@ def libToList(fileName):
         newList.append(tlist)  
     for i in newList:
         templist = []
-        templist.append(list(i[1:4]))
-        templist.append(list(i[9:]))
+        templist.append(list(i[0:4]))
+        templist.append(list(i[4:]))
         finalList.append(templist)
     for i in finalList:
         it = 0
