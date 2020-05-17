@@ -1,9 +1,23 @@
 import skillAudit as sa
 import pandas as pd
+import xlsxwriter
 
 
-lib = sa.libToList('Skill Script Template.xlsx')
-cur = sa.curToList('export_agent-loginID.txt')
+# =============================================================================
+# Initial lists of lists
+# =============================================================================
+
+lib = sa.libToList('Skill Script Template.xlsx') #excell template w/ optimal skill data.
+#Index[0] = [Department, Name, Login Id], Index[1] = [[Skill1,Pri1],[Skill2,Pri2], etc]
+
+cur = sa.curToList('export_agent-loginID.txt') #txt file w/ programmed skill data.
+#Index[0] = [Login Id, Name], Index[1] = [[Skill1,Pri1],[Skill2,Pri2], etc]
+
+
+# =============================================================================
+# Creates new list with only current data that matches library data based on Login Id
+# Also updates index[0] to match index[0] of lib for dataframe grouping purposes.
+# =============================================================================
 
 newList = []
 
@@ -16,10 +30,11 @@ for i in cur:
             curInfo.insert(0,empInfo)
             newList.append(curInfo)
 
-
+#Sort both lists
 lib.sort()
 newList.sort()
 
+#adds value to index[0] that depicts the list type
 for i in lib:
     i[0].append('Standard')
     i[1].sort(reverse=True)
@@ -27,50 +42,59 @@ for i in lib:
 for j in newList:
     j[0].append('Programmed')
     j[1].sort(reverse=True)
-   
-df1 = pd.DataFrame(lib)
-df2 = pd.DataFrame(newList)
 
-
-
-#for i in lib:
-#    if i[0] not in (x[0] for x in newList):
-#        print(i[0])
-#for i in newList:
-#    if i[0] not in (x[0] for x in lib):
-#        print('Not in CMS or Users Login Credentials Dont Match User in Skill Library')
-
-
+    
+#combine two lists
 combo = lib + newList
-dfList = pd.DataFrame(combo, columns = ['empInfo','skillInfo'])
- 
+
+
+# =============================================================================
+# Turn lists into dataframes
+# =============================================================================
+
+dfList = pd.DataFrame(combo, columns = ['empInfo','skillInfo']) 
+#create dataframe w/ two colums, one for each list in list
+
+#change each list into new columns 
 empInfo = dfList['empInfo'].apply(pd.Series)
-empInfo = empInfo.rename(columns = lambda x : 'tag_' + str(x))
- 
+empInfo = empInfo.rename(columns = lambda x : 'tag_' + str(x)) 
 skillInfo = dfList['skillInfo'].apply(pd.Series)
 skillInfo = skillInfo.rename(columns = lambda x : 'tag2_' + str(x))
- 
-final = pd.concat([empInfo[:], skillInfo[:]], axis=1)
-final = final.rename(columns = {'tag_0':'Department','tag_1':'Template','tag_2':'Name','tag_3':'Login Id','tag_4':'Type','tag2_0':'S1','tag2_1':'S2','tag2_2':'S3','tag2_3':'S4','tag2_4':'S5','tag2_5':'S6','tag2_6':'S7','tag2_7':'S8','tag2_8':'S9','tag2_9':'S10','tag2_10':'S11','tag2_11':'S12','tag2_12':'S13','tag2_13':'S14','tag2_14':'S15','tag2_15':'S16','tag2_16':'S17','tag2_17':'S18','tag2_18':'S19','tag2_19':'S20'})
-final = final.sort_values(['Department','Template','Name'])
-final = final.set_index(['Department','Template', 'Name','Login Id','Type'])
-final = final.astype(str)
 
-new = final.reset_index()
-new = new.drop_duplicates(subset=['Department','Template','Name','Login Id','S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','S11','S12','S13','S14','S15','S16','S17','S18','S19','S20'], keep = False)
-new = new.set_index(['Department','Template','Name','Login Id','Type'])
-#print(new.applymap(lambda x: isinstance(x, str)).all())
-#print(final.dtypes)
+#Dataframe of all matched data between lists, based on Login Id
+allMatches = pd.concat([empInfo[:], skillInfo[:]], axis=1)
+allMatches = allMatches.rename(columns = {'tag_0':'Department','tag_1':'Template','tag_2':'Name','tag_3':'Login Id','tag_4':'Type','tag2_0':'S1','tag2_1':'S2','tag2_2':'S3','tag2_3':'S4','tag2_4':'S5','tag2_5':'S6','tag2_6':'S7','tag2_7':'S8','tag2_8':'S9','tag2_9':'S10','tag2_10':'S11','tag2_11':'S12','tag2_12':'S13','tag2_13':'S14','tag2_14':'S15','tag2_15':'S16','tag2_16':'S17','tag2_17':'S18','tag2_18':'S19','tag2_19':'S20'})
+allMatches = allMatches.sort_values(['Department','Template','Name'])
+allMatches = allMatches.set_index(['Department','Template','Name','Login Id','Type'])
+allMatches = allMatches.astype(str)
 
+#Replacing data to enhance column readability
+allMatches = allMatches.replace('[\'\', \'\']','')
+allMatches= allMatches.replace('\'\'','\'R1\'', regex=True)
+allMatches= allMatches.replace('\[\'','', regex=True)
+allMatches= allMatches.replace('\', \'',', ', regex=True)
+allMatches= allMatches.replace('\'\]','', regex=True)
+
+#Dataframe of skill based exceptions. Will return row if any Skill or Priority is not correct
+skillExceptions = allMatches.reset_index()
+skillExceptions = skillExceptions.drop_duplicates(subset=['Department','Template','Name','Login Id','S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','S11','S12','S13','S14','S15','S16','S17','S18','S19','S20'], keep = False)
+skillExceptions = skillExceptions.set_index(['Department','Template','Name','Login Id','Type'])
+
+exceptionCount = skillExceptions.reset_index()
+exceptionCount = exceptionCount[['Department','Template','Name','Login Id']].copy()
+exceptionCount = exceptionCount.drop_duplicates(subset=['Department','Template','Name','Login Id'], keep='first')
+
+statSummaryText = open('stats.txt', 'a')
+statSummaryText.write(exceptionCount.to_string())
+statSummaryText.close()
+print(exceptionCount)
+# =============================================================================
+# Write all dataframes to Excel File for final review and correction.
+# =============================================================================
 with pd.ExcelWriter('Skill Audit.xlsx') as writer:  
-    final.to_excel(writer, sheet_name='Raw Data')
-    new.to_excel(writer, sheet_name='Exceptions')
-    
-#print(len(lib))
-#print(len(newList))
-#print(newList[0])
-#print(lib[0])
-#print(newList[0][0])
-#print(lib[0][0])
-#print(hex(id(newList[0][0])))
-#print(hex(id(lib[0][0])))
+    allMatches.to_excel(writer, sheet_name='Master List')
+    skillExceptions.to_excel(writer, sheet_name='Skill Exceptions')
+
+
+
+

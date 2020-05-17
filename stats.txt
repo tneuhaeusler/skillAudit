@@ -1,0 +1,191 @@
+          Department                      Template                  Name Login Id
+0                COG                           COG      Hilberry, Ashlee    12830
+2                COG                           COG            Marr, Ryan    12850
+4                COG                           COG        Severt, Tayler    12320
+6                COG                COG Supervisor       Held, Katherine    12412
+8        Collections                                        Betz, Rosina    12217
+10       Collections                                    Burgoon, Christy    12228
+12       Collections                                     Erboe, Kathleen    13557
+14       Collections                                       Miller, Cindy    12221
+16       Collections                                   Polaski, Victoria    12216
+18       Collections                                    Powell, Kristina    12215
+20       Collections        Collections Supervisor           Allen, Tana    12205
+22       Collections          Commercial Collector  Brosenitsch, Beverly    12211
+24       Collections          Commercial Collector          Hogan, Shawn    13300
+26       Collections         Residential Collector   Cardillo, Christine    12212
+28       Collections         Residential Collector        Fields, Marsha    12213
+30       Collections         Residential Collector    McKinniss, Candace    12208
+32       Collections         Residential Collector     Ritenour, Chelsea    12225
+34       Collections         Residential Collector          Rygiel, Jean    12203
+36   Commercial Care  Commercial Care Specialist I       Abul-Ela, Ahmad    12418
+38   Commercial Care  Commercial Care Specialist I      Davis, Stephanie    12875
+40   Commercial Care  Commercial Care Specialist I      Gaffney, Kenneth    12670
+42   Commercial Care  Commercial Care Specialist I    Householder, Randy    12833
+44   Commercial Care  Commercial Care Specialist I   Kalchthaler, Nicole    12317
+46   Commercial Care  Commercial Care Specialist I        Main, Michelle    12878
+48   Commercial Care  Commercial Care Specialist I          Miller, Mark    12669
+50   Commercial Care  Commercial Care Specialist I    Partridge, William    12454
+52   Commercial Care  Commercial Care Specialist I    Petro, Christopher    12378
+54   Commercial Care  Commercial Care Specialist I         Samykin, Sara    12361
+56   Commercial Care  Commercial Care Specialist I    Wellington, Claire    12415
+58  Customer Loyalty      Loyalty Specialist W/ HD        Bradshaw, Kyle    12846
+60  Customer Loyalty      Loyalty Specialist W/ HD      Vasalani, Debbie    13282
+62  Customer Loyalty            Loyalty Supervisor      Campbell, Lorena    12309
+64  Customer Loyalty            Loyalty Supervisor        Girasek, Alida    12303
+66  Customer Loyalty             Loyalty Team Lead        Petrina, Patti    12342
+68  Customer Loyalty             Loyalty Team Lead           Rape, Tyler    12459
+70        Data Entry    Commercial Data Specialist           Kraus, Tara    12283
+72  Residential Care           Care Specialist III         Senior, Randy    12855
+74  Residential Care           Care Specialist III        Smedley, Sarah    12366          Department                      Template                  Name Login Id
+0                COG                           COG      Hilberry, Ashlee    12830
+2                COG                           COG            Marr, Ryan    12850
+4                COG                           COG        Severt, Tayler    12320
+6                COG                COG Supervisor       Held, Katherine    12412
+8        Collections                                        Betz, Rosina    12217
+10       Collections                                    Burgoon, Christy    12228
+12       Collections                                     Erboe, Kathleen    13557
+14       Collections                                       Miller, Cindy    12221
+16       Collections                                   Polaski, Victoria    12216
+18       Collections                                    Powell, Kristina    12215
+20       Collections        Collections Supervisor           Allen, Tana    12205
+22       Collections          Commercial Collector  Brosenitsch, Beverly    12211
+24       Collections          Commercial Collector          Hogan, Shawn    13300
+26       Collections         Residential Collector   Cardillo, Christine    12212
+28       Collections         Residential Collector        Fields, Marsha    12213
+30       Collections         Residential Collector    McKinniss, Candace    12208
+32       Collections         Residential Collector     Ritenour, Chelsea    12225
+34       Collections         Residential Collector          Rygiel, Jean    12203
+36   Commercial Care  Commercial Care Specialist I       Abul-Ela, Ahmad    12418
+38   Commercial Care  Commercial Care Specialist I      Davis, Stephanie    12875
+40   Commercial Care  Commercial Care Specialist I      Gaffney, Kenneth    12670
+42   Commercial Care  Commercial Care Specialist I    Householder, Randy    12833
+44   Commercial Care  Commercial Care Specialist I   Kalchthaler, Nicole    12317
+46   Commercial Care  Commercial Care Specialist I        Main, Michelle    12878
+48   Commercial Care  Commercial Care Specialist I          Miller, Mark    12669
+50   Commercial Care  Commercial Care Specialist I    Partridge, William    12454
+52   Commercial Care  Commercial Care Specialist I    Petro, Christopher    12378
+54   Commercial Care  Commercial Care Specialist I         Samykin, Sara    12361
+56   Commercial Care  Commercial Care Specialist I    Wellington, Claire    12415
+58  Customer Loyalty      Loyalty Specialist W/ HD        Bradshaw, Kyle    12846
+60  Customer Loyalty      Loyalty Specialist W/ HD      Vasalani, Debbie    13282
+62  Customer Loyalty            Loyalty Supervisor      Campbell, Lorena    12309
+64  Customer Loyalty            Loyalty Supervisor        Girasek, Alida    12303
+66  Customer Loyalty             Loyalty Team Lead        Petrina, Patti    12342
+68  Customer Loyalty             Loyalty Team Lead           Rape, Tyler    12459
+70        Data Entry    Commercial Data Specialist           Kraus, Tara    12283
+72  Residential Care           Care Specialist III         Senior, Randy    12855
+74  Residential Care           Care Specialist III        Smedley, Sarah    12366          Department                      Template                  Name Login Id
+0                COG                           COG      Hilberry, Ashlee    12830
+2                COG                           COG            Marr, Ryan    12850
+4                COG                           COG        Severt, Tayler    12320
+6                COG                COG Supervisor       Held, Katherine    12412
+8        Collections                                        Betz, Rosina    12217
+10       Collections                                    Burgoon, Christy    12228
+12       Collections                                     Erboe, Kathleen    13557
+14       Collections                                       Miller, Cindy    12221
+16       Collections                                   Polaski, Victoria    12216
+18       Collections                                    Powell, Kristina    12215
+20       Collections        Collections Supervisor           Allen, Tana    12205
+22       Collections          Commercial Collector  Brosenitsch, Beverly    12211
+24       Collections          Commercial Collector          Hogan, Shawn    13300
+26       Collections         Residential Collector   Cardillo, Christine    12212
+28       Collections         Residential Collector        Fields, Marsha    12213
+30       Collections         Residential Collector    McKinniss, Candace    12208
+32       Collections         Residential Collector     Ritenour, Chelsea    12225
+34       Collections         Residential Collector          Rygiel, Jean    12203
+36   Commercial Care  Commercial Care Specialist I       Abul-Ela, Ahmad    12418
+38   Commercial Care  Commercial Care Specialist I      Davis, Stephanie    12875
+40   Commercial Care  Commercial Care Specialist I      Gaffney, Kenneth    12670
+42   Commercial Care  Commercial Care Specialist I    Householder, Randy    12833
+44   Commercial Care  Commercial Care Specialist I   Kalchthaler, Nicole    12317
+46   Commercial Care  Commercial Care Specialist I        Main, Michelle    12878
+48   Commercial Care  Commercial Care Specialist I          Miller, Mark    12669
+50   Commercial Care  Commercial Care Specialist I    Partridge, William    12454
+52   Commercial Care  Commercial Care Specialist I    Petro, Christopher    12378
+54   Commercial Care  Commercial Care Specialist I         Samykin, Sara    12361
+56   Commercial Care  Commercial Care Specialist I    Wellington, Claire    12415
+58  Customer Loyalty      Loyalty Specialist W/ HD        Bradshaw, Kyle    12846
+60  Customer Loyalty      Loyalty Specialist W/ HD      Vasalani, Debbie    13282
+62  Customer Loyalty            Loyalty Supervisor      Campbell, Lorena    12309
+64  Customer Loyalty            Loyalty Supervisor        Girasek, Alida    12303
+66  Customer Loyalty             Loyalty Team Lead        Petrina, Patti    12342
+68  Customer Loyalty             Loyalty Team Lead           Rape, Tyler    12459
+70        Data Entry    Commercial Data Specialist           Kraus, Tara    12283
+72  Residential Care           Care Specialist III         Senior, Randy    12855
+74  Residential Care           Care Specialist III        Smedley, Sarah    12366          Department                      Template                  Name Login Id
+0                COG                           COG      Hilberry, Ashlee    12830
+2                COG                           COG            Marr, Ryan    12850
+4                COG                           COG        Severt, Tayler    12320
+6                COG                COG Supervisor       Held, Katherine    12412
+8        Collections                                        Betz, Rosina    12217
+10       Collections                                    Burgoon, Christy    12228
+12       Collections                                     Erboe, Kathleen    13557
+14       Collections                                       Miller, Cindy    12221
+16       Collections                                   Polaski, Victoria    12216
+18       Collections                                    Powell, Kristina    12215
+20       Collections        Collections Supervisor           Allen, Tana    12205
+22       Collections          Commercial Collector  Brosenitsch, Beverly    12211
+24       Collections          Commercial Collector          Hogan, Shawn    13300
+26       Collections         Residential Collector   Cardillo, Christine    12212
+28       Collections         Residential Collector        Fields, Marsha    12213
+30       Collections         Residential Collector    McKinniss, Candace    12208
+32       Collections         Residential Collector     Ritenour, Chelsea    12225
+34       Collections         Residential Collector          Rygiel, Jean    12203
+36   Commercial Care  Commercial Care Specialist I       Abul-Ela, Ahmad    12418
+38   Commercial Care  Commercial Care Specialist I      Davis, Stephanie    12875
+40   Commercial Care  Commercial Care Specialist I      Gaffney, Kenneth    12670
+42   Commercial Care  Commercial Care Specialist I    Householder, Randy    12833
+44   Commercial Care  Commercial Care Specialist I   Kalchthaler, Nicole    12317
+46   Commercial Care  Commercial Care Specialist I        Main, Michelle    12878
+48   Commercial Care  Commercial Care Specialist I          Miller, Mark    12669
+50   Commercial Care  Commercial Care Specialist I    Partridge, William    12454
+52   Commercial Care  Commercial Care Specialist I    Petro, Christopher    12378
+54   Commercial Care  Commercial Care Specialist I         Samykin, Sara    12361
+56   Commercial Care  Commercial Care Specialist I    Wellington, Claire    12415
+58  Customer Loyalty      Loyalty Specialist W/ HD        Bradshaw, Kyle    12846
+60  Customer Loyalty      Loyalty Specialist W/ HD      Vasalani, Debbie    13282
+62  Customer Loyalty            Loyalty Supervisor      Campbell, Lorena    12309
+64  Customer Loyalty            Loyalty Supervisor        Girasek, Alida    12303
+66  Customer Loyalty             Loyalty Team Lead        Petrina, Patti    12342
+68  Customer Loyalty             Loyalty Team Lead           Rape, Tyler    12459
+70        Data Entry    Commercial Data Specialist           Kraus, Tara    12283
+72  Residential Care           Care Specialist III         Senior, Randy    12855
+74  Residential Care           Care Specialist III        Smedley, Sarah    12366          Department                      Template                  Name Login Id
+0                COG                           COG      Hilberry, Ashlee    12830
+2                COG                           COG            Marr, Ryan    12850
+4                COG                           COG        Severt, Tayler    12320
+6                COG                COG Supervisor       Held, Katherine    12412
+8        Collections                                        Betz, Rosina    12217
+10       Collections                                    Burgoon, Christy    12228
+12       Collections                                     Erboe, Kathleen    13557
+14       Collections                                       Miller, Cindy    12221
+16       Collections                                   Polaski, Victoria    12216
+18       Collections                                    Powell, Kristina    12215
+20       Collections        Collections Supervisor           Allen, Tana    12205
+22       Collections          Commercial Collector  Brosenitsch, Beverly    12211
+24       Collections          Commercial Collector          Hogan, Shawn    13300
+26       Collections         Residential Collector   Cardillo, Christine    12212
+28       Collections         Residential Collector        Fields, Marsha    12213
+30       Collections         Residential Collector    McKinniss, Candace    12208
+32       Collections         Residential Collector     Ritenour, Chelsea    12225
+34       Collections         Residential Collector          Rygiel, Jean    12203
+36   Commercial Care  Commercial Care Specialist I       Abul-Ela, Ahmad    12418
+38   Commercial Care  Commercial Care Specialist I      Davis, Stephanie    12875
+40   Commercial Care  Commercial Care Specialist I      Gaffney, Kenneth    12670
+42   Commercial Care  Commercial Care Specialist I    Householder, Randy    12833
+44   Commercial Care  Commercial Care Specialist I   Kalchthaler, Nicole    12317
+46   Commercial Care  Commercial Care Specialist I        Main, Michelle    12878
+48   Commercial Care  Commercial Care Specialist I          Miller, Mark    12669
+50   Commercial Care  Commercial Care Specialist I    Partridge, William    12454
+52   Commercial Care  Commercial Care Specialist I    Petro, Christopher    12378
+54   Commercial Care  Commercial Care Specialist I         Samykin, Sara    12361
+56   Commercial Care  Commercial Care Specialist I    Wellington, Claire    12415
+58  Customer Loyalty      Loyalty Specialist W/ HD        Bradshaw, Kyle    12846
+60  Customer Loyalty      Loyalty Specialist W/ HD      Vasalani, Debbie    13282
+62  Customer Loyalty            Loyalty Supervisor      Campbell, Lorena    12309
+64  Customer Loyalty            Loyalty Supervisor        Girasek, Alida    12303
+66  Customer Loyalty             Loyalty Team Lead        Petrina, Patti    12342
+68  Customer Loyalty             Loyalty Team Lead           Rape, Tyler    12459
+70        Data Entry    Commercial Data Specialist           Kraus, Tara    12283
+72  Residential Care           Care Specialist III         Senior, Randy    12855
+74  Residential Care           Care Specialist III        Smedley, Sarah    12366
